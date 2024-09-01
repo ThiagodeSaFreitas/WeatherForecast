@@ -21,18 +21,18 @@
 
     <div id="intrucao">
         <p id="text">Descubra Mais com Precisão: <br> Previsões do Tempo e endereços  <br> em tempo real.</p>
-        <img src="imgs/image 3 (1).png" alt="nuvens">
+        <img src="imgs/image 2 (3).png" style="width: 200px;" alt="nuvens">
     </div>
     <form class="d-flex align-items-center p-4 mt-5 " id="form">
-        <div class="col-6 pb-3">
+        <div class="col-10 pb-3">
             <label for="formGroupExampleInput" class="form-label">Primeiro Nome:</label>
             <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Insira seu primeiro nome:" style="font-size: 10px;">
           </div>
-          <div class="col-6 pb-3">
+          <div class="col-10 pb-3">
             <label for="formGroupExampleInput2" class="form-label">E-mail:</label>
             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Insira seu e-mail" style="font-size: 10px;">
           </div>
-          <div class="col-6 pb-3">
+          <div class="col-10 pb-3">
             <label for="formGroupExampleInput2" class="form-label">Digite o CEP:</label>
             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Insira o CEP" style="font-size: 10px;">
           </div>
@@ -47,9 +47,52 @@
                 <input type="text" class="form-control" placeholder="Longitude" style="font-size: 10px;">
               </div>
           </div>
+          <div class="d-grid gap-2 col-10 mx-auto">
+            <button id="acess" class="btn btn-primary mt-5 pb-1 shadow-lg"  type="button">Acessar</button>
+          </div>
         
 
     </form>
+
+    <section>
+      <div>
+        <div id="resultado">
+          <p id="text">Resultado da busca por CEP:</p>
+          <img style="width: 75px;" src="imgs/image 2 (2).png" alt="nuvens">
+      </div>
+          <table id="table" class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Logradouro/nome</th>
+                <th>Bairro/Distrito</th>
+                <th>Localidade/UF</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </section>
+    <section id="prev">
+      <div>
+        <div id="previsao">
+          <p id="text">Previsão do tempo na região:</p>
+          <img style="width: 75px;" src="imgs/image 3 (1).png" alt="nuvens">
+      </div>
+      <input id="input" type="text">
+    </section>
+
+    <footer class="navbar bg-primary mt-5">
+      <div class="container-fluid d-flex justify-content-end">
+        <a class="navbar-brand text-white" href="#">Termos de Uso | Política de Privacidade</a>
+      </div>
+    </footer>
+    
     
     
 

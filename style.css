@@ -34,5 +34,52 @@ body{
    
 }
 
+#resultado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+#table{
+    border-radius: 15px;
+    overflow: hidden;
+    width: 40%;
+    margin: auto;
+    font-size: 12px;
+    text-align: center;
+   
+}
+
+#table thead th {
+    background: #0C70F2;
+    color: white;
+
+}
+
+#prev{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+}
+
+#previsao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+#input{
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: #0C70F2;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    
+
+}
+
 
 
