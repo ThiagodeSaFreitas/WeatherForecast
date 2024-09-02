@@ -70,13 +70,14 @@ body{
     margin-top: 55px;
 }
 
-#input{
+#inputPrevisao{
     border-radius: 15px;
     border: 1px solid;
     border-color: #0C70F2;
     display: flex;
     width: 100%;
     margin-top: 20px;
+    text-align: center;
     
 
 }
