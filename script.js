@@ -8,6 +8,8 @@ async function getAddressByCep(){
         document.getElementById('bairro').innerText = data.bairro;
         document.getElementById('uf').innerText = data.localidade;
 
+        document.getElementById('cep').value = '';
+
     } catch (error) {
         alert(error.message);
         
@@ -34,7 +36,10 @@ async function getPrevisao(){
 
         const temperatura = data.hourly.temperature_2m[0];
         document.getElementById('inputPrevisao').value = `Previsão de tempo de acordo com a região: ${temperatura}°C`;
-     
+        
+
+        document.getElementById('Latitude').value = '';
+        document.getElementById('Longitude').value = '';
 
     } catch (error) {
         alert(error.message);
@@ -53,10 +58,23 @@ document.querySelectorAll('.navbar button').forEach(button => {
       const targetId = this.getAttribute('data-scroll-target');
       const targetSection = document.querySelector(targetId);
   
-      // Rola suavemente até a seção alvo
       targetSection.scrollIntoView({
         behavior: 'smooth'
       });
     });
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const accessButton = document.getElementById('acess');
+    
+    accessButton.addEventListener('click', function() {
+       
+        cepWeather();
+        
+        const targetSection = document.querySelector('#inputPrevisao');
+        targetSection.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
   
