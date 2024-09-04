@@ -18,3 +18,6 @@ Antes de começar, você precisará ter o seguinte instalado em sua máquina:
 
 - Um navegador moderno como Google Chrome, Firefox, etc.
 - Conexão com a Internet para fazer requisições às APIs.
+
+
+# Link do site disponibilizado: https://weather-forecast-murex-nu.vercel.app/
